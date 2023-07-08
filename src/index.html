@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="head">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+
+  <body class="w-full h-screen dark:text-white overflow-hidden transition-all">
+    <header
+      class="flex items-center justify-between w-full h-10-100 pt-3 pb-3 pr-6 pl-6 || bg-slate-300 dark:bg-slate-600"
+    >
+      <div
+        id="back-button"
+        class="backButton || flex items-center justify-center -ml-2 cursor-pointer"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 26 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="header__icon"
+        >
+          <path
+            d="M24.5 13.5H2.5"
+            stroke=""
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="stroke-slate-500 dark:stroke-slate-300"
+          />
+          <path
+            d="M2 13L13 2"
+            stroke=""
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="stroke-slate-500 dark:stroke-slate-300"
+          />
+          <path
+            d="M2 13L13 24"
+            stroke=""
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="stroke-slate-500 dark:stroke-slate-300"
+          />
+        </svg>
+      </div>
+
+      <div
+        id="search-container"
+        class="flex items-center justify-center w-5/6 h-7 invisible"
+      >
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search magnitude or unit"
+          class="w-5/6 px-2 py-0.5 || rounded dark:text-white dark:bg-neutral-700"
+        />
+      </div>
+
+      <div class="flex items-center gap-5">
+        <div id="search-button" class="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="cursor-pointer"
+          >
+            <g id="Interface / Search_Magnifying_Glass">
+              <path
+                id="Vector"
+                d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="stroke-slate-500 dark:stroke-slate-300"
+              />
+            </g>
+          </svg>
+        </div>
+
+        <div id="darkMode-button" class="flex items-center"></div>
+      </div>
+    </header>
+
+    <main
+      id="main"
+      class="h-90-100 py-2 px-2 dark:bg-neutral-700 overflow-auto"
+    ></main>
+
+    <script src="main.js" type="module"></script>
+    <script src="modules/darkmode.js" type="module"></script>
+  </body>
+</html>
+
+<!-- Lista de estilos que deseo que se renderizen
+absolute top-1 right-1 ml-auto stroke-neutral-200 py-0.5 fill-neutral-200 hover:stroke-yellow-500 w-12 w-24 w-2/4  hover:fill-yellow-500 dark:stroke-neutral-600 dark:fill-neutral-600 dark:hover:stroke-yellow-500 dark:hover:fill-yellow-500 border py-4 flex-col
+magnitudeOpt flex flex-col items-center justify-center w-24 h-24 p-2 || text-sm rounded cursor-pointer hover:bg-neutral-100 hover:scale-110 dark:hover:bg-neutral-500 transition-all
+w-12 h-12 flex justify-between items-center w-full p-2 text-sm rounded cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-500
+transition-colors flex flex-col gap-2 py-4 flex flex-wrap gap-5 mb-2 p-4 magnitudeOpt flex justify-between items-center w-full p-2 || text-sm rounded cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-500 transition-colors
+flex justify-center items-center w-5 h-5 mx-1 favoriteButton flex justify-center items-center w-5 h-5 ml-auto
+stroke-neutral-200 fill-neutral-200 dark:stroke-neutral-600 dark:fill-neutral-600 hover:stroke-yellow-500 hover:fill-yellow-500 dark:hover:stroke-yellow-500 dark:hover:fill-yellow-500
+w-3/5 ml-auto || bg-neutral-100 dark:bg-neutral-500 text-right text-xl rounded text-neutral-400 dark:text-neutral-200 text-sm
+w-full || bg-neutral-100 dark:bg-neutral-500 flex flex-col gap-3 p-2 text-center border flex justify-center items-center w-12 h-12 mx-auto
+flex w-full h-14 p-2 || bg-neutral-100 gap-y-3 overflow-hidden dark:bg-neutral-500 text-neutral-400 fill-neutral-300 stroke-neutral-300 rounded fill-slate-500 border dark:border-neutral-600 text-neutral-300 gap-y-5" dark:text-neutral-500 text-sm
+-->
