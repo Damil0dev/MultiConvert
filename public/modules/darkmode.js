@@ -34,14 +34,30 @@
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
       changeIconSun();
+      localStorage.setItem("lastTheme", "light");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      changeIconMoon();
+      localStorage.setItem("lastTheme", "dark");
+    }
+  };
+
+  function detectLastUserSelection() {
+    const lastTheme = localStorage.getItem("lastTheme");
+    if (lastTheme == "light") {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      changeIconSun();
     } else {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
       changeIconMoon();
     }
-  };
+  }
 
   //EJECUCION DEL CODIGO
   firstThemeCheck();
   darkmode_button.addEventListener("click", themeSwitch);
+  detectLastUserSelection();
 }
