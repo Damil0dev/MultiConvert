@@ -961,6 +961,11 @@ select:focus{
   transition: opacity 0.3s;
 }
 
+.favoriteButton--list{
+  visibility: visible;
+  opacity: 1;
+}
+
 .magnitudeOpt:hover .favoriteButton{
   opacity: 1;
   visibility: visible;
@@ -1048,4 +1053,16 @@ select:focus{
 
 :is(.dark .dark\:hover\:stroke-yellow-500:hover) {
   stroke: #eab308;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    padding-left: 25% !important;
+    padding-right: 25% !important;
+  }
+
+  main {
+    padding-left: 25% !important;
+    padding-right: 25% !important;
+  }
 }
