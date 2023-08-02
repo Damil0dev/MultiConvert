@@ -7,7 +7,7 @@
   "orientation": "portrait",
   "scope": "/",
   "short_name": "MultiConvert",
-  "start_url": "https://answer-384823.firebaseapp.com/",
+  "start_url": "https://multi-convert-by-damian-ysla.firebaseapp.com/",
   "theme_color": "#332F2E",
   "categories": [
     "utilities"
@@ -23,7 +23,7 @@
   "related_applications": [
     {
       "platform": "windows",
-      "url": "https://answer-384823.web.app/"
+      "url": "https://multi-convert-by-damian-ysla.firebaseapp.com/"
     }
   ],
   "icons": [
