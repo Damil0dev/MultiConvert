@@ -226,9 +226,6 @@ function convert(e, magnitude_selected) {
     } else if (decimals > 6) {
     } */
 
-    if (inputNum === 0) {
-      result = " "
-    }
 
     return result;
   }
